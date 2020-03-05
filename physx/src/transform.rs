@@ -26,6 +26,7 @@ pub fn px_identity_tf() -> PxTransform {
 }
 
 struct PxQuatWrap(PxQuat);
+
 impl From<Quat> for PxQuatWrap {
     fn from(other: Quat) -> Self {
         let (x, y, z, w) = other.into();

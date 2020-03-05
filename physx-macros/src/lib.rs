@@ -109,6 +109,7 @@ impl ParseTarget {
         }
     }
 }
+
 #[derive(Default, Debug)]
 struct MacroArgs {
     inherit: Option<String>,

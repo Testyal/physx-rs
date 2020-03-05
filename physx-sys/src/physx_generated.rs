@@ -897,117 +897,117 @@ pub const eFORCE_DWORD: Enum = 2147483647u64 as u32;
 }
 pub type PxZERO = u32;
 pub const PxZero: PxZERO = 0u64 as u32;
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxAllocatorCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxAssertHandler{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxErrorCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxInputStream{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxInputData{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxOutputStream{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRenderBuffer{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxProcessPxBaseCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBaseFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSerializationContext{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCollection{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSerializationRegistry{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSerializer{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRepXSerializer{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxStringTable{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxFoundation{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxProfilerCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPhysicsInsertionCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxTaskManager{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCpuDispatcher{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConvexMeshGeometryFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPadding_3_{
     pub mPadding: [u8; 3],
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxMeshGeometryFlags{
     pub mBits: u8,
@@ -1024,252 +1024,252 @@ pub union Anonymous59{
     pub mesh: [u8; 48],
     pub heightfield: [u8; 32],
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxHitFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBitAndByte{
     pub mData: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxHeightFieldFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxMeshFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxTriangleMeshFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxActorFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxArticulationImpl{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConstraintVisualizer{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConstraintConnector{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdDataStream{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConstraintAllocator{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxArticulationFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxArticulationCacheFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxArticulationJointImpl{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxShapeFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRigidBodyFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxFilterFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSimulationFilterCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPairFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxQueryFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxQueryFilterCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRaycastQueryResult{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSweepQueryResult{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxOverlapQueryResult{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBatchQuery{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConstraintFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxContactModifyCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCCDContactModifyCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDeletionListener{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDataAccessFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxLockedData{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxMaterialFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPhysics{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSimulationEventCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBroadPhaseCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSceneFlags{
     pub mBits: u32,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCudaContextManager{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDeletionEventFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPvd{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRigidDynamicLockFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPvdSceneClient{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPvdSceneFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdDebugPoint{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdDebugLine{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdDebugTriangle{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdDebugText{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PvdClient{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxActorTypeFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxContactPairHeaderFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxContactPairFlags{
     pub mBits: u16,
@@ -1304,72 +1304,72 @@ pub struct PxOverlapCallback{
     pub maxNbTouches: u32,
     pub nbTouches: u32,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxTriggerPairFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxObstacleContext{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerManager{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxUserControllerHitReport{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxController{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerFilterCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerBehaviorCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerCollisionFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBoxController{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCapsuleController{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerBehaviorFlags{
     pub mBits: u8,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxControllerDebugRenderFlags{
     pub mBits: u32,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxConvexFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxTypedStridedData_physx_PxMaterialTableIndex_{
     pub stride: u32,
@@ -1381,126 +1381,126 @@ pub union Anonymous216{
     pub mBVH33Desc: PxBVH33MidphaseDesc,
     pub mBVH34Desc: PxBVH34MidphaseDesc,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxMeshPreprocessingFlags{
     pub mBits: u32,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxCooking{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDistanceJointFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDefaultAllocator{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPrismaticJointFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxRevoluteJointFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSphericalJointFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxD6JointDriveFlags{
     pub mBits: u32,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDefaultErrorCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxBinaryConverter{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxDefaultCpuDispatcher{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSceneQueryFilterCallback{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxSceneQueryFlags{
     pub mBits: u16,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct XmlWriter{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct MemoryBuffer{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct XmlReader{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct XmlMemoryAllocator{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxFixedSizeLookupTable_eMAX_NB_ENGINE_TORQUE_CURVE_ENTRIES_{
     pub mDataPairs: [f32; 16],
     pub mNbDataPairs: u32,
     pub mPad: [u32; 3],
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxVehicleWheels4SimData{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxVehicleWheels4DynData{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxVehicleTireForceCalculator{
     pxbind_dummy: u8
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxFixedSizeLookupTable_8_{
     pub mDataPairs: [f32; 16],
     pub mNbDataPairs: u32,
     pub mPad: [u32; 3],
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPvdTransport{
     vtable_: *const std::ffi::c_void,
 }
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 #[repr(C)]
 pub struct PxPvdInstrumentationFlags{
     pub mBits: u8,

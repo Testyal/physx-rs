@@ -235,6 +235,7 @@ impl ArticulationJointReducedCoordinate {
 ////////////////////////////////////////////////////////////////////////////////
 
 // todo[tolsson]
+#[derive(Debug)]
 pub struct JointBuilder {
     joint_type: ArticulationJointType,
     axis: Vec3,

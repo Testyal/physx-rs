@@ -50,6 +50,7 @@ impl Default for ArticulationBaseUserData {
  * Section SCENEUSERDATA                                            *
  ******************************************************************************/
 
+#[derive(Debug)]
 pub struct SceneUserData {
     // px_scene: RwLock<()>,
 // bodies: Vec<ArticulationReducedCoordinate>,

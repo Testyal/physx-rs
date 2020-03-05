@@ -27,10 +27,12 @@ impl From<PxBounds3> for Bounds {
     }
 }
 
+#[derive(Debug)]
 pub struct Isometry {
     pub translation: Mat4,
     pub rotation: Mat4,
 }
+
 impl Isometry {
     /// Extracts the rotation and translation matrix from a matrix.
     pub fn from_mat4(m: &Mat4) -> Self {

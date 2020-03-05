@@ -53,6 +53,7 @@ macro_rules! ptr_to_slice {
     };
 }
 
+#[derive(Debug)]
 pub struct ArticulationRootLinkData {
     pub transform: (Quat, Vec3),
     pub world_lin_vel: Vec3,
